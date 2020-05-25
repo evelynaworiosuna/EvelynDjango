@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- ***** Breadcumb Area Start ***** -->
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url({%static 'img/bg-img/hero-1.jpg' %});"></div>
+<!-- ***** Breadcumb Area End ***** -->
+<section class="dorne-listing-destinations-area section-padding-100-100">
+
+
+
+
+    <br/><br/>
+    <div class="container">
+    
+    <div class="form-group">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="btn btn-secondary">Register</button>
+        </div>
+    </div>
+
+
+    {% endblock %}

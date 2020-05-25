@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/hero-1.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="hero-content">
+                        <h2>Discover places near you</h2>
+                        <h4>This is the best guide of your city</h4>
+                    </div>
+                    <!-- Hero Search Form -->
+                    <div class="hero-search-form">
+                        <!-- Tabs -->
+                        <div class="nav nav-tabs" id="heroTab" role="tablist">
+                           </div>
+                        <!-- Tabs Content -->
+                        <div class="feature-content d-flex align-items-center justify-content-between"></d>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab">
+                                <h6>What are you looking for?</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select">
+                                        <option selected>Location</option>
+                                        <option value="1">Namugongo</option>
+                                        <option value="2">Naalya</option>
+                                        <option value="3">Bweyogerere</option>
+                                        <option value="4">Kira</option>
+                                        <option value="5">Kireka</option>
+                                    </select>
+                                    <select class="custom-select">
+                                        <option selected> Catagories</option>
+                                        <option value="1">Hotels</option>
+                                        <option value="2">Restaurants</option>
+                                        <option value="3">Shopping</option>
+                                        <option value="2">Beuty & Spa</option>
+                                        <option value="3">Cinemas</option>
+                                    </select>
+                                     
+                                    <button type="submit" class="btn dorne-btn"><a href="{% url 'listing' %}"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!-- ***** Catagory Area Start ***** -->
+    <section class="dorne-catagory-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="all-catagories">
+                        <div class="row">
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.2s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-1.png' %}" alt="">
+                                        <a href="#">
+                                            <h6>Hotels</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.4s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-2.png' %}" alt="">
+                                        <a href="#">
+                                            <h6>Restaurants</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.6s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-3.png' %}" alt="">
+                                        <a href="#">
+                                            <h6>Shopping</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.8s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-4.png' %}" alt="">
+                                        <a href="#">
+                                            <h6>Beauty &amp; Spa</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="1s">
+                                    <div class="catagory-content">
+                                        <img src="{% static 'img/core-img/icon-5.png' %}" alt="">
+                                        <a href="#">
+                                            <h6>Cinema</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Catagory Area End ***** -->
+
+    <!-- ***** About Area Start ***** -->
+    <section class="dorne-about-area section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content text-center">
+                        <h2>Discover your city with <br><span>Evelyn</span></h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area End ***** -->
+
+    
+    
+
+   
+   
+    
+ {% endblock %}

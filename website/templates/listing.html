@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+    <!-- ***** Breadcumb Area Start ***** -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url({%static 'img/bg-img/hero-1.jpg' %});"></div>
+    <!-- ***** Breadcumb Area End ***** -->
+    <section class="dorne-listing-destinations-area section-padding-100-100">
+        
+                        <h3>Listed Businesses</h3>
+
+                        <!-- Single Features Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-features-area mb-50">                     
+                        <div class="feature-content d-flex align-items-center justify-content-between">
+                                
+                            <div class="feature-title">
+                                {% for item in all %}
+                                    Category : {{ item.Category }}<br/>
+                                    Business Name : {{ item.BusinessName }}<br/>
+                                    Location : {{ item.Location }}<br/>
+                                    Email : {{ item.Email }}<br/>
+                                    Password : {{ item.Password }}<br/>
+                                    Telephone : {{ item.Telephone }}<br/><br/>
+                                    <hr>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+              
+
+                 
+                           
+{% endblock %}  
